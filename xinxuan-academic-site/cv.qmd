@@ -1,5 +1,0 @@
----
-title: CV
----
-
-[Download CV (English version)](assets/CV-Xinxuan-Liu.pdf)
