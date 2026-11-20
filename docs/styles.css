@@ -81,3 +81,96 @@ h1,h2,h3{color:var(--ink);font-family:Georgia,'Times New Roman',serif}h1{font-si
   border-radius: 8px;
   background: #171717;
 }
+
+
+/* ==================================
+   Responsive Design
+   ================================== */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 768px) {
+
+  .homepage {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  /* Switch to a vertical layout */
+  .intro {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Portrait */
+  .portrait {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .portrait img {
+    width: 180px !important;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Introduction */
+  .intro-text {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  h2 {
+    font-size: 1.4rem !important;
+  }
+
+  h3 {
+    font-size: 1.15rem !important;
+  }
+
+  p {
+    line-height: 1.65;
+  }
+
+  /* Prevent long email addresses from overflowing */
+  a {
+    overflow-wrap: anywhere;
+  }
+
+  /* Research abstracts */
+  .research-abstract > p {
+    margin-left: 0;
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  /* Music Gallery */
+  .music-gallery {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .music-gallery video {
+    width: 100%;
+    height: auto;
+  }
+
+}
