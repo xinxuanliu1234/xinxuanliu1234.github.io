@@ -174,3 +174,27 @@ video {
   }
 
 }
+/* Improve mobile screen width */
+@media (max-width: 600px) {
+
+  #quarto-content {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .homepage {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+
+  .intro-text,
+  .portrait {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
